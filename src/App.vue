@@ -1,64 +1,46 @@
 <template>
-  <div id="app">
-      <Header msg="message"/>
-    <div class="list"><h1 >List of transactions</h1></div>
-    <button type="submit" class="list-1">Create New</button>
-    <Table msg="hi"/>
-    <router-view></router-view>
-     <Footer />
+  <div id="">
+  <router-link to="/register" class="menu">Register</router-link>&nbsp;&nbsp;
+  <!-- <router-link to="login" class="menu">Login</router-link> -->
+  <router-view></router-view>
+  <!--
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   -->
+   <!--  <Header />
+   <CreateItem />
+   <AddItem />
+     <tableHeader />
+       
+      <Example />
+     -->
+        <h1></h1>
   </div>
- 
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue';
-
-import Header from './components/Header.vue';
-import Table from './components/Table.vue';
-import Footer from './components/Footer.vue';
-
-
+//import HelloWorld from './components/HelloWorld.vue'
+//import tableHeader  from './components/tableHeader.vue'
+//import Header from './components/Header.vue'
+//import Example from './components/Example.vue'
+//import CreateItem from './components/CreateItem.vue'
+//import AddItem from './components/AddItem.vue'
 export default {
   name: 'App',
+  
   components: {
-    Header,
-    Table,
-    Footer,
-    
-  }
+   //tableHeader,Header,CreateItem,AddItem,
+   // HelloWorld
+   //Example
+  }, 
+   
+   
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #F7F7F7;
-  margin-top: 60px;
-}
-.list{
-  position: absolute;
-  color: black;
-  margin-top: 70px;
-  border-radius: 10px;
-  margin-left: 140px;
-  overflow: hidden;
-}
-.list-1{
-  position: absolute;
-  color: white;
-  margin-top: 70px;
-  overflow: hidden;
-  margin-left: 400px;
-font-size: 20px;
-background-color: #19174A;
-border-radius: 5px;
-
-}
-.list-1:hover{
-  cursor: pointer;
-  background-color:green;
+<style scope>
+.menu{
+  color:black;
+  font-size:30px;
 }
 </style>

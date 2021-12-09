@@ -1,12 +1,17 @@
 <template>
   <div class="container">
    
-      <ul>
+      <!-- <ul>
   <li><a href="/home" class="logo">Crud UI</a></li>
   <li><a href="/news"><MenuIcon /></a></li>
   <li><a href="/contact"><SettingIcon /></a></li>
   <li><a href="/akash"><SettingEngine /></a></li>
-</ul>
+</ul> -->
+<!-- <ul>
+   <li slot="">
+          Home
+        </li>
+</ul> -->
    
 
   </div>
@@ -14,16 +19,15 @@
 
 <script>
 
-import MenuIcon from 'vue-material-design-icons/Menu.vue';
-import SettingIcon from 'vue-material-design-icons/AlarmBell.vue';
-import SettingEngine from 'vue-material-design-icons/FileSettings.vue';
+// import MenuIcon from 'vue-material-design-icons/Menu.vue';
+// import SettingIcon from 'vue-material-design-icons/AlarmBell.vue';
+// import SettingEngine from 'vue-material-design-icons/FileSettings.vue';
 
 export default {
   name: 'Header',
   components: {
-    MenuIcon,
-    SettingIcon,
-    SettingEngine
+        
+        
   }
 }
 </script>
